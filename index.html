@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body {
+            
+            line-height: 1.6;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Difference Between document and window Objects in JavaScript</h1>
+
+    <p>JavaScript provides two important objects, <code>window</code> and <code>document</code>, which play crucial roles in web development. Understanding the differences between these two objects is fundamental for building dynamic and interactive web pages.</p>
+
+    <h2>The Window Object</h2>
+    <p>The <code>window</code> object represents the browser window or tab. It serves as the global object for JavaScript in a web page. Some key features of the <code>window</code> object include:</p>
+    <ul>
+        <li>It can be accessed globally without the need to reference it explicitly.</li>
+        <li>It provides properties like <code>location</code>, <code>history</code>, and <code>navigator</code> to interact with the browser environment.</li>
+        <li>It manages the global scope and is the parent object for all other global objects.</li>
+    </ul>
+
+    <h2>The Document Object</h2>
+    <p>The <code>document</code> object represents the HTML document loaded in the browser. It provides an interface to interact with the content of the document. Key features of the <code>document</code> object include:</p>
+    <ul>
+        <li>It represents the entire HTML document and provides methods to access and manipulate its content.</li>
+        <li>It allows access to elements within the document, such as forms, images, and paragraphs.</li>
+        <li>It provides methods like <code>getElementById</code> and <code>querySelector</code> for DOM manipulation.</li>
+    </ul>
+
+    <h2>Differences at a Glance</h2>
+    <table>
+        <tr>
+            <th>Aspect</th>
+            <th><code>window</code> Object</th>
+            <th><code>document</code> Object</th>
+        </tr>
+        <tr>
+            <td>Representation</td>
+            <td>Represents the browser window or tab.</td>
+            <td>Represents the HTML document loaded in the browser.</td>
+        </tr>
+        <tr>
+            <td>Global Access</td>
+            <td>Accessed globally without explicit reference.</td>
+            <td>Accessed globally but often referenced explicitly.</td>
+        </tr>
+        <tr>
+            <td>Main Properties</td>
+            <td>Provides properties related to the browser environment (e.g., <code>location</code>, <code>history</code>).</td>
+            <td>Provides methods and properties related to the document content (e.g., <code>getElementById</code>, <code>querySelector</code>).</td>
+        </tr>
+    </table>
+
+    <h2>Conclusion</h2>
+    <p>In summary, the <code>window</code> object represents the browser window or tab and provides access to browser-related properties, while the <code>document</code> object represents the HTML document and facilitates interaction with its content. Both objects are integral to JavaScript in the context of web development, and a clear understanding of their differences is essential for effective scripting and DOM manipulation.</p>
+</body>
+</html>
